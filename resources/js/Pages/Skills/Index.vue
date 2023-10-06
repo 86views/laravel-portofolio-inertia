@@ -3,14 +3,14 @@
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800">
                 All Skills
             </h2>
         </template>
 
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-end m-2 p-2">
+            <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex justify-end p-2 m-2">
                     <Link
                         :href="route('skills.create')"
                         class="inline-block px-4 py-3 mb-4 text-white bg-blue-500 rounded"
@@ -62,14 +62,14 @@
                                 <td class="px-6 py-4">
                                     <Link
                                         :href="route('skills.edit', skill.id)"
-                                        class="px-2 py-1 bg-blue-600 text-white rounded font-bold uppercase mr-2"
+                                        class="px-2 py-1 mr-2 font-bold text-white uppercase bg-blue-600 rounded"
                                         >Edit</Link
                                     >
 
                                     <!-- <button
                                         @click="destroy(skill.id)"
                                         type="button"
-                                        class="px-2 py-1 bg-red-600 text-white rounded font-bold uppercase"
+                                        class="px-2 py-1 font-bold text-white uppercase bg-red-600 rounded"
                                     >
                                         Delete
                                     </button> -->
@@ -81,7 +81,7 @@
                                         method="delete"
                                         as="button"
                                         type="button"
-                                        class="px-2 py-1 bg-red-600 text-white rounded font-bold uppercase"
+                                        class="px-2 py-1 font-bold text-white uppercase bg-red-600 rounded"
                                     >
                                         Delete
                                     </Link>
